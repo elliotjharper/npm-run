@@ -1,0 +1,26 @@
+{
+    "name": "npm-script-run",
+    "version": "1.0.1",
+    "description": "",
+    "main": "index.js",
+    "bin": {
+        "npmrun": "./npm-run.js"
+    },
+    "scripts": {
+        "execute": "node cli.js",
+        "install-globally": "npm i -g npm-script-run@latest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/elliotjharper/npm-run.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/elliotjharper/npm-run/issues"
+    },
+    "homepage": "https://github.com/elliotjharper/npm-run#readme",
+    "dependencies": {
+        "clipboardy": "^2.3.0"
+    }
+}
