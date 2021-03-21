@@ -67,7 +67,7 @@ process.stdin.on("keypress", (keyString, keyObj) => {
         const scriptRunCmd = `npm run ${packageScripts[currentIndex]}`;
         clipboardy.writeSync(scriptRunCmd);
 
-        console.log("Launch Script copied to clipboard:");
+        console.log("Launch Script copied to Clipboard:");
         console.log(scriptRunCmd);
 
         process.exit(0);
