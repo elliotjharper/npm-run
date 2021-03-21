@@ -62,10 +62,12 @@ process.stdin.on("keypress", (keyString, keyObj) => {
     } else if (keyObj.name === "return") {
         console.clear();
 
+        // a random comment
+
         const scriptRunCmd = `npm run ${packageScripts[currentIndex]}`;
         clipboardy.writeSync(scriptRunCmd);
 
-        console.log("Launch script copied to clipboard:");
+        console.log("Launch Script copied to clipboard:");
         console.log(scriptRunCmd);
 
         process.exit(0);
