@@ -2,7 +2,7 @@
 
 const fs = require("fs");
 const readline = require("readline");
-const clipboardy = require("clipboardy");
+const ncp = require("copy-paste");
 
 readline.emitKeypressEvents(process.stdin);
 process.stdin.setRawMode(true);
@@ -65,12 +65,12 @@ process.stdin.on("keypress", (keyString, keyObj) => {
         // a random comment
 
         const scriptRunCmd = `npm run ${packageScripts[currentIndex]}`;
-        clipboardy.writeSync(scriptRunCmd);
+        ncp.copy(scriptRunCmd, () => {
+            console.log("Launch Script copied to Clipboard:");
+            console.log(scriptRunCmd);
 
-        console.log("Launch Script copied to Clipboard:");
-        console.log(scriptRunCmd);
-
-        process.exit(0);
+            process.exit(0);
+        });
     } else if (keyObj.name === "c" && keyObj.ctrl) {
         process.exit(0);
     }
