@@ -1,6 +1,6 @@
 {
     "name": "npm-script-run",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "",
     "main": "index.js",
     "bin": {
@@ -8,7 +8,15 @@
         "npr": "./npm-run.js"
     },
     "scripts": {
-        "execute": "node cli.js",
+        "execute": "node npm-run.js",
+        "dummy-1": "echo dummy",
+        "dummy-2": "echo dummy",
+        "dummy-3": "echo dummy",
+        "dummy-4": "echo dummy",
+        "dummy-5": "echo dummy",
+        "dummy-6": "echo dummy",
+        "dummy-7": "echo dummy",
+        "dummy-8": "echo dummy",
         "install-globally": "npm i -g npm-script-run@latest"
     },
     "repository": {
